@@ -5,7 +5,7 @@ def main():
   print("Hello and welcome to sports trivia!")
   userWishesToContinue = True
   while(userWishesToContinue):
-#Main Menu 
+#Main Menu
     print("Main Menu")
     print("1) play")
     print("2) info")
@@ -13,7 +13,7 @@ def main():
     print("Stars:")
     for stars in range(score):
       print("*" + "", end="")
-      print("") 
+    print("")
     mainMenu = int(input("Enter the number of menu option desired: "))
   #play options menu
     if mainMenu == 1:
@@ -24,11 +24,11 @@ def main():
       print("4) Hockey")
       print("5) Soccer")
       userInput = int(input("Enter the number of sport option desired: "))
-    #football is selected    
+    #football is selected
       if userInput == 1:
           print("You Chose Football Trivia!")
           print("Let's Begin!")
-      #football question 1            
+      #football question 1
           print("Question 1: Who won Super Bowl 51 in 2017?")
           print("Answers:")
           print("1 ) Atlanta Falcons")
@@ -43,7 +43,7 @@ def main():
           else:
             print("Incorrect, The New England Patriots won Super Bowl 51 in 2017 against the Atlanta Falcons.")
             print("score:", score)
-      #next question              
+      #next question
           print("would you like another question?")
           print("1 ) yes")
           print("2 ) return to Main Menu")
@@ -73,7 +73,7 @@ def main():
             print("2 ) return to Main Menu")
             print("3 ) exit game")
             userInput = int(input("enter answer here:"))
-              #end game after question 1           
+              #end game after question 1
             if userInput == 3:
               userWishesToContinue = False
               print("Thank You for playing!")
@@ -105,7 +105,7 @@ def main():
       elif userInput == 2:
         print("You Chose Basketball Trivia!")
         print("Lets Begin!")
-        #basketball question 1            
+        #basketball question 1
         print("Question 1: What team did LeBron James get drafted to?")
         print("Answers:")
         print("1 ) Clevland Cavaleirs")
@@ -129,7 +129,7 @@ def main():
         if userInput == 3:
           userWishesToContinue = False
           print("Thank You for playing!")
-           #main menu for basketball question 1 
+           #main menu for basketball question 1
         elif userInput == 1:
         #basketball question 2
           print("Question 2: Who holds the record for most NBA championships as of 2019?")
@@ -178,28 +178,29 @@ def main():
               userWishesToContinue = False
               print("Thank You for playing!")
     # baseball is selected
-          elif userInput == 3:
+        elif userInput == 3:
             print("Coming Soon")
     # hockey is selected
-          elif userInput == 4:
-            print("Coming Soon")
+        elif userInput == 4:
+           print("Coming Soon")
     # soccer is selected
-          elif userInput == 5:
+        elif userInput == 5:
             print("Coming Soon")
 #info from main menu
-        elif mainMenu == 2:
+    elif mainMenu == 2:
           print("Game Info")
           print("Thank you for playing Sports Trivia! This trivia game is a basic knowledge quiz about various sports. In the Sports options menu you can select one of 5 different sports to be quized on. Each sport has 3 questions and you will be awarded 1 point for every question correctly answered. When you end the game you will recive a *for how many points you have earned. Challenge your friends to see who knows the most across all 5 sports!")
           print(" ")
           print("Please select and option below")
           print("1) return to Main Menu")
           print("2) Exit game")
-          int(input("Enter menu option desired here:"))
+          userInput = int(input("Enter menu option desired here:"))
           if userInput == 2:
             userWishesToContinue = False
             print("Thank You for playing!")
-#exit from Main Menu    
-        elif mainMenu == 3:
+#exit from Main Menu
+    elif mainMenu == 3:
           userWishesToContinue = False
           print("Thank You for playing!")
+          print("score:", score)
 main()
