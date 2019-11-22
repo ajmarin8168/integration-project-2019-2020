@@ -62,7 +62,6 @@ def main():
                 # next question 1
                 print("")
                 user_input = askingUsertoContinue()
-                print("")
                 # football question 2
                 if user_input == 3:
                     user_wishes_to_continue = False
@@ -89,7 +88,6 @@ def main():
                         print("")
                     # next question 2
                     user_input = askingUsertoContinue()
-                    print("")
                     # football question 3
                     if user_input == 3:
                         user_wishes_to_continue = False
@@ -512,15 +510,11 @@ def askingUsertoContinue():
     return user_input
 
 """
-    returms the user input to the to either deplay next question, 
-    return to main menu or end game
+    returns the user input to either deplay next question, return to main menu, or end game
 """
 
 main()
 
 #to do list
-#space things out
-#add def for end game including score
-#add def for score keeping correct/incorrect
 #check for grammer spelling and punctuation
 #make sure all aspects run properly
