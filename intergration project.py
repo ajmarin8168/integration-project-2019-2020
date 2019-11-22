@@ -196,15 +196,159 @@ def main():
                         if user_input == 2:
                             user_wishes_to_continue = False
                             print("Thank You for playing!")
-                # baseball is selected
-                elif user_input == 3:
-                    print("Coming Soon")
-                # hockey is selected
-                elif user_input == 4:
-                    print("Coming Soon")
-                # soccer is selected
-                elif user_input == 5:
-                    print("Coming Soon")
+            # baseball is selected
+            elif user_input == 3:
+              print("You Chose Baseball Trivia! Let's Begin!")
+              #baseball question 1
+              print("Question 1: What MLB team does Chris Sale pitch for as of 2019?")
+              print("Answers:")
+              print("1 ) Boston Red Sox")
+              print("2 ) Chicago White sox")
+              print("3 ) Tampa Bay Rays")
+              print("4 ) CHicago Cubs")
+              user_input = int(input("Enter Answer Here: "))
+              if user_input == 1:
+                print("Correct, Chris Sale is the starting pitcher for the Boston Red Sox as of 2019.")
+                score = score + 1
+                print("score:", score)
+              else:
+                print("Incorrect, Chris Sale is the starting pitcher for the Boston Red Sox as of 2019.")
+              # next question 5
+              user_input = askingUsertoContinue()
+              if user_input == 3:
+                user_wishes_to_continue = False
+                print("Thank you for playing")
+              # baseball question 2
+              elif user_input == 1:
+                print("Question 2: What MLB team has the most World Series wins?")
+                print("Answers:")
+                print("1) Boston Red Sox")
+                print("2) St. Louis Cardinals")
+                print("3) New York Yankees")
+                print("4) LA Dodgers")
+                user_input = int(input("Enter Ansewer Here: "))
+                if user_input == 3:
+                  print("Correct, the New York Yankees have the most World Series wins, with 27 total wins.")
+                  score = score + 1
+                  print("score:", score)
+                else:
+                  print("Incorrect, the New York Yankees have the most World Series wins, with 27 total wins.")
+                # next question 6
+                user_input = askingUsertoContinue()
+                if user_input == 3:
+                  user_wishes_to_continue = False
+                  print("Thank you for playing")
+              # baseball question 3
+                elif user_input == 1:
+                  print("Question 3: What famous baseball player was the first to retire a number?")
+                  print("Answers:")
+                  print("1) Babe Ruth")
+                  print("2) Lou Gehrig")
+                  print("3) Jackie Robinson")
+                  print("4) Tom Seaver")
+                  user_input = int(input("Enter Ansewer Here: "))
+                  if user_input == 2:
+                    print("Correct, Lou Gehrig was the first MLB player to retire a number in 1939. His number was 4 and retired as a Yankee.")
+                    score = score + 1
+                    print("score:", score)
+                  else:
+                    print("Incorrect, Lou Gehrig was the first MLB player to retire a number in 1939. His number was 4 and retired as a Yankee.")
+                  print("Thank You for playing the Baseball portion of Sports Trivia! Would you like to return to ")
+                  print("score:", score)
+                  print("1) Return to Main Menu")
+                  print("2) End Game")
+                  user_input = int(input("Enter Answer Here:"))
+                  if user_input == 2:
+                    user_wishes_to_continue = False
+                    print("Thank You for playing!")
+                    print("score:", score)
+            # hockey is selected
+            elif user_input == 4:
+              print("You Chose hockey Trivia!")
+              print("Lets Begin!")
+              # hockey question 1
+              print("Question 1: What is the newest team to the NHL as of the 2019 season?")
+              print("Answers:")
+              print("1 ) Columbus Blue Jackets")
+              print("2 ) Florida Panthers")
+              print("3 ) Minnesota Wilds")
+              print("4 ) Vagas Golden Knights")
+              user_input = int(input("Enter Answer Here:"))
+              if user_input == 4:
+                print("Correct, the Vagas Golden Knights are the newest team to the NHL as of the 2019 season.")
+                score = score + 1
+                print("score:", score)
+              else:
+                print("incorrect,the Vagas Golden Knights are the newest team to the NHL as of the 2019 season..")
+                print("score:", score)
+              # next question 7
+              user_input = askingUsertoContinue()
+              if user_input == 3:
+                user_wishes_to_continue = False
+                print("Thank you for playing")
+              # hockey question 2
+              elif user_input == 1:
+                print("Question 2: What NHl team has the most Stanley Cup wins?")
+                print("1) LA Kings")
+                print("2) Tampa Bay Lightning")
+                print("3) Montreal Canadiens")
+                print("4) Ottawa Senators")
+                user_input = int(input("Enter Ansewer Here: "))
+                if user_input == 3:
+                  print("Correct, the Montreal Canadiens have won the most Stanly Cups, holding a totla of 24")
+                  score = score + 1
+                  print("score:", score)
+                else:
+                  print( "incorrect,the Montreal Canadiens have won the most Stanly Cups, holding a totla of 24")
+                  print("score:", score)
+                #next question 8
+                user_input = askingUsertoContinue()
+                if user_input == 3:
+                  user_wishes_to_continue = False
+                  print("Thank you for playing")
+              # hockey question 3
+                elif user_input == 1:
+                  print("Question 2: How many games are played in regular season hockey?")
+                  print("1) 32")
+                  print("2) 94")
+                  print("3) 82")
+                  print("4) 86")
+                  user_input = int(input("Enter Ansewer Here: "))
+                  if user_input == 3:
+                    print("Correct, there are only 82 regualar season games in hockey")
+                    score = score + 1
+                    print("score:", score)
+                  else:
+                    print( "incorrect,there are only 82 regular season games in hockey.")
+                    print("score:", score)
+                  print("Thank You for playing the football portion of Sports Trivia! Would you like to return to ")
+                  print("score:", score)
+                  print("1) Return to Main Menu")
+                  print("2) End Game")
+                  user_input = int(input("Enter Answer Here:"))
+                  if user_input == 2:
+                    user_wishes_to_continue = False
+                    print("Thank You for playing!")
+                    print("score:", score)
+          # soccer is selected
+            elif user_input == 5:
+              print("You Chose soccer Trivia!")
+              print("Lets Begin!")
+              # soccer question 1
+              print("Question 1: How many professional soccer luages are there in the world as of 2019?")
+              print("Answers:")
+              print("1 ) 18")
+              print("2 ) 21")
+              print("3 ) Minnesota Wilds")
+              print("4 ) Vagas Golden Knights")
+              user_input = int(input("Enter Answer Here:"))
+              if user_input == 4:
+                print("Correct, the Vagas Golden Knights are the newest team to the NHL as of the 2019 season.")
+                score = score + 1
+                print("score:", score)
+              else:
+                print("incorrect,the Vagas Golden Knights are the newest team to the NHL as of the 2019 season..")
+                print("score:", score)
         # info from main menu
         elif main_menu == 2:
             print("Game Info")
