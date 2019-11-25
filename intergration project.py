@@ -505,8 +505,6 @@ def main():
             print("Thank You for playing Sports Trivia!")
             print("")
             print("score:", score)
-        else:
-          print("Please enter your answer as an integer. Example 1,2,3,4.")
 
 
 def askingUsertoContinue():
@@ -526,7 +524,3 @@ def askingUsertoContinue():
 """
 
 main()
-
-#to do list
-#check for grammer spelling and punctuation
-#make sure all aspects run properly
