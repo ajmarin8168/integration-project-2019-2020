@@ -387,7 +387,7 @@ def main():
                     print("")
                     print("score:", score)
                     print("")
-                  print("Thank You for playing the football portion of Sports Trivia! Would you like to return to main menu?")
+                  print("Thank You for playing the hockey portion of Sports Trivia! Would you like to return to main menu?")
                   print("1) Return to Main Menu")
                   print("2) End Game")
                   user_input = int(input("Enter Answer Here:"))
@@ -417,13 +417,15 @@ def main():
                 score = score + 1
                 print("score:", score)
               else:
-                print("incorrect,there are 21 professional soccer luages in the world as of 2019.")
+                print("Incorrect,there are 21 professional soccer luages in the world as of 2019.")
                 print("score:", score)
               # next question 9
               user_input = askingUsertoContinue()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing")
+                print("Thank you for playing Sports Trivia!")
+                print("")
+                print("score:", score)
               # soccer question 2
               elif user_input == 1:
                 print("Question 2: How many total players on the fild during a game?")
@@ -437,13 +439,15 @@ def main():
                   score = score + 1
                   print("score:", score)
                 else:
-                  print( "incorrect,there are a total 22 players on the fild at once during a game. 11 players per team")
+                  print( "Incorrect,there are a total 22 players on the fild at once during a game. 11 players per team")
                   print("score:", score)
               # next question 10
               user_input = askingUsertoContinue()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing")
+                print("Thank you for playing sports Trivia!")
+                print("")
+                print("score:", score)
               # soccer question 3
               elif user_input == 1:
                 print("Question 2: How many teams are in the Primer Luage as of 2019?")
@@ -457,17 +461,20 @@ def main():
                   score = score + 1
                   print("score:", score)
                 else:
-                  print( "incorrect,there are only 20 teams in the primer Luage as of 2019")
+                  print( "Incorrect,there are only 20 teams in the primer Luage as of 2019")
                   print("score:", score)
                 print(
                 "Thank You for playing the football portion of Sports Trivia! Would you like to return to ")
-                print("score:", score)
                 print("1) Return to Main Menu")
                 print("2) End Game")
                 user_input = int(input("Enter Answer Here:"))
+                print("")
+                print("score:", score)
+                print("")
                 if user_input == 2:
                   user_wishes_to_continue = False
-                  print("Thank You for playing!")
+                  print("Thank You for playing Sports Trivia!")
+                  print("")
                   print("score:", score)
         # info from main menu
         elif main_menu == 2:
@@ -479,32 +486,37 @@ def main():
                 " options menu you can select one of 5 different sports to be"
                 " quized on.\nEach sport has 3 questions and you will be"
                 " awarded 1 point for every question correctly answered."
-                " \nWhen you end the game you will recive a *for how many "
+                " \nWhen you end the game you will recive a * for how many "
                 "points you have earned. Challenge your friends to see who"
                 " knows the most across all 5 sports!")
             print(" ")
-            print("Please select and option below")
+            print("Please select an option below")
             print("1) return to Main Menu")
             print("2) Exit game")
             user_input = int(input("Enter menu option desired here:"))
             if user_input == 2:
                 user_wishes_to_continue = False
-                print("Thank You for playing!")
+                print("Thank You for playing Sports trivia!")
+                print("")
+                print("score:", score)
         # exit from Main Menu
         elif main_menu == 3:
             user_wishes_to_continue = False
-            print("Thank You for playing!")
+            print("Thank You for playing Sports Trivia!")
+            print("")
             print("score:", score)
+        else:
+          print("Please enter your answer as an integer. Example 1,2,3,4.")
 
 
 def askingUsertoContinue():
     """
     displays a reoccurring question
     """
-    print("would you like another question?")
-    print("1 ) yes")
-    print("2 ) return to Main Menu")
-    print("3 ) exit game")
+    print("Would you like another question?")
+    print("1 ) Yes")
+    print("2 ) Return to Main Menu")
+    print("3 ) Exit game")
     user_input = int(input("enter answer here:"))
     print("")
     return user_input
