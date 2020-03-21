@@ -10,7 +10,7 @@ def main():
     :return:
     """
     score = 0
-    print("Hello and welcome to sports trivia!")
+    print("Hello and welcome to sports trivia! \n")
     user_wishes_to_continue = True
     while user_wishes_to_continue:
   # Main Menu
@@ -26,12 +26,7 @@ def main():
         main_menu = int(input("Enter the number of menu option desired: "))
         # play options menu
         if main_menu == 1:
-            print("Sports Option Menu")
-            print("1) Football")
-            print("2) Basketball")
-            print("3) Baseball")
-            print("4) Hockey")
-            print("5) Soccer")
+            print("\n Sports Option Menu \n 1) Football \n 2) Basketball \n 3) Baseball \n 4) Hockey \n 5) Soccer \n")
             user_input = int(input("Enter the number of sport option desired: "))
             print("")
             # football is selected
@@ -413,11 +408,11 @@ def main():
               print("4 ) 4")
               user_input = int(input("Enter Answer Here:"))
               if user_input == 2:
-                print("Correct, there are 21 professional soccer luages in the world as of 2019.")
+                print("Correct, there are 21 professional soccer leagues in the world as of 2019.")
                 score = score + 1
                 print("score:", score)
               else:
-                print("Incorrect,there are 21 professional soccer luages in the world as of 2019.")
+                print("Incorrect,there are 21 professional soccer leagues in the world as of 2019.")
                 print("score:", score)
               # next question 9
               user_input = askingUsertoContinue()
@@ -450,7 +445,7 @@ def main():
                 print("score:", score)
               # soccer question 3
               elif user_input == 1:
-                print("Question 2: How many teams are in the Primer Luage as of 2019?")
+                print("Question 3: How many teams are in the Primer Luage as of 2019?")
                 print("1) 20")
                 print("2) 22")
                 print("3) 16")
