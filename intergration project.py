@@ -1,5 +1,5 @@
 """
-integration project: sports trivia game
+integration project: Sports Trivia '19
 __author__ = Allan Marin
 """
 
@@ -10,74 +10,57 @@ def main():
     :return:
     """
     score = 0
-    print("Hello and welcome to sports trivia! \n")
+    print("Hello and welcome to Sports Trivia '19! \n")
     user_wishes_to_continue = True
     while user_wishes_to_continue:
   # Main Menu
-        print("Main Menu")
-        print("1) play")
-        print("2) info")
-        print("3) exit")
-        print("")
-        print("Stars:")
+        print("Main Menu \n1) Play Menu \n2) Info \n3) Exit Game \n")
+        print("Career Status: ")
+        playerCareerStatus(score)
+        print("\nStars:")
         for stars in range(score):
             print("*" + "", end="")
         print("")
         main_menu = int(input("Enter the number of menu option desired: "))
         # play options menu
         if main_menu == 1:
-            print("\n Sports Option Menu \n 1) Football \n 2) Basketball \n 3) Baseball \n 4) Hockey \n 5) Soccer \n")
+            print("\nSports Option Menu \n1) Football \n2) Basketball \n3) Baseball \n4) Hockey \n5) Soccer \n")
             user_input = int(input("Enter the number of sport option desired: "))
             print("")
             # football is selected
             if user_input == 1:
-                print("You Chose Football Trivia!")
-                print("Let's Begin!")
-                print("")
+                print("You Chose Football Trivia, Let's Begin! \n")
                 # football question 1
-                print("Question 1: Who won Super Bowl 51 in 2017?")
-                print("Answers:")
-                print("1 ) Atlanta Falcons")
-                print("2 ) New England Patriots")
-                print("3 ) Oakland Raiders")
-                print("4 ) Baltimore Ravens")
+                print("Question 1: Who won Super Bowl 51 in 2017? \n")
+                print("Answers: \n1 ) Atlanta Falcons \n2 ) New England Patriots \n3 ) Oakland Raiders \n4 ) Baltimore Ravens \n")
                 user_input = int(input("Enter Answer Here: "))
                 print("")
                 if user_input == 2:
-                    print("correct! The New England Patriots won Super Bowl"
-                          " 51 in 2017 against the Atlanta Falcons.")
+                    print("Correct! The New England Patriots won \nSuper Bowl 51 in 2017 against the \nAtlanta Falcons. \n")
                     score = score + 1
-                    print("")
                     print("score:", score)
                 else:
-                    print("Incorrect, The New England Patriots won Super Bowl"
-                          " 51 in 2017 against the Atlanta Falcons.")
-                    print("")
+                    print("Incorrect, The New England Patriots won  \nSuper Bowl 51 in 2017 against the \nAtlanta Falcons. \n")
                     print("score:", score)
-                # next question 1
                 print("")
+                # next question 1
                 user_input = askingUsertoContinue()
                 # football question 2
                 if user_input == 3:
                     user_wishes_to_continue = False
                     print("Thank you for playing")
                 elif user_input == 1:
-                    print("Question 2: who owns the current title of most"
-                          " running yards in their career as of 2019?")
-                    print("1) Frank Gore")
-                    print("2) Adrian Peterson")
-                    print("3) Emmitt Smith")
-                    print("4) Josh Jacobs")
+                    print("Question 2: who owns the current title of most \nrunning yards in their career as of 2019? \n1) Frank Gore \n2) Adrian Peterson \n3) Emmitt Smith \n4) Josh Jacobs \n")
                     user_input = int(input("Enter Ansewer Here: "))
                     print("")
                     if user_input == 3:
-                        print("Correct, Emmit smith has the record for most running yards in a career with a total of 18,355 yards!")
+                        print("Correct, Emmit smith has the record for most \nrunning yards in a career with a total \nof 18,355 yards!")
                         score = score + 1
                         print("")
                         print("score:", score)
                         print("")
                     else:
-                        print("incorrect,Emmit smith has the record for most running yards in a career with a total of 18,355 yards!")
+                        print("Incorrect,Emmit smith has the record for most \nrunning yards in a career with a total \nof 18,355 yards!")
                         print("")
                         print("score:", score)
                         print("")
@@ -89,38 +72,30 @@ def main():
                         print("Thank You for playing!")
                         print("score:", score)
                     elif user_input == 1:
-                        print("Question 3: Who is the starting quarterback of the packers as of 2019?")
-                        print("1) Derk Carr")
-                        print("2) Tom Brady")
-                        print("3) Aaron Rodgers")
-                        print("4) Cam Newton")
+                        print("Question 3: Who is the starting quarterback \nof the packers as of 2019? \n1) Derk Carr \n2) Tom Brady \n3) Aaron Rodgers \n4) Cam Newton \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 3:
-                          print("Correct, Aaron Rodgers is the starting"
-                                  " quarterback for the Packers as of 2019.")
+                          print("Correct, Aaron Rodgers is the starting quarterback \nfor the Packers as of 2019.")
                           score = score + 1
                           print("")
                           print("score:", score)
                           print("")
                         else:
-                          print("Incorrect, Aaron Rodgers is the startign quarterback for the Packers as of 2019.")
+                          print("Incorrect, Aaron Rodgers is the startign quarterback \nfor the Packers as of 2019.")
                           print("")
                           print("score:", score)
                           print("")
-                        print("Thank You for playing the football portion of Sports Trivia! Would you like to return to?")
-                        print("")
+                        print("Thank You for playing! \nYou have completed the football portion of \nSports Trivia '19!\n")
                         print("score:", score)
                         print("")
-                        print("1) Return to Main Menu")
-                        print("2) End Game")
+                        print("1) Return to Main Menu \n2) End Game \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 2:
                             user_wishes_to_continue = False
                             print("")
-                            print("Thank You for playing sports trivia!")
-                            print("")
+                            print("Thank You for playing sports trivia! \n")
                             print("score:", score)
             # basketball is selected
             elif user_input == 2:
@@ -501,6 +476,24 @@ def main():
             print("")
             print("score:", score)
 
+def playerCareerStatus(score):
+  if (score == 0):
+    return (print("D1 Player"))
+  elif (score > 0 and score <= 3):
+    return (print("First Round Draft pick"))
+  elif (score > 3 and score <= 6):
+    return (print("Rookie"))
+  elif (score > 6 and score <= 9):
+    return (print("Starter"))
+  elif (score > 9 and score <= 12):
+    return (print("All star player"))
+  elif (score > 12 and score <15):
+    return (print("League MVP"))
+  elif (score == 15):
+    return (print("Hall of Famer"))
+  """
+  returns the players career status based on the the score they recive based on the amount of questions correct
+  """
 
 def askingUsertoContinue():
     """
@@ -510,7 +503,7 @@ def askingUsertoContinue():
     print("1 ) Yes")
     print("2 ) Return to Main Menu")
     print("3 ) Exit game")
-    user_input = int(input("enter answer here:"))
+    user_input = int(input("Enter answer here:"))
     print("")
     return user_input
 
