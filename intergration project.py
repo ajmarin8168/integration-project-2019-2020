@@ -50,7 +50,7 @@ def main():
                     user_wishes_to_continue = False
                     print("Thank you for playing")
                 elif user_input == 1:
-                    print("Question 2: who owns the current title of most \nrunning yards in their career as of 2019? \n1) Frank Gore \n2) Adrian Peterson \n3) Emmitt Smith \n4) Josh Jacobs \n")
+                    print("Question 2: who owns the current title of most \nrunning yards in their career as of 2019? \nAnswers: \n1) Frank Gore \n2) Adrian Peterson \n3) Emmitt Smith \n4) Josh Jacobs \n")
                     user_input = int(input("Enter Ansewer Here: "))
                     print("")
                     if user_input == 3:
@@ -72,7 +72,7 @@ def main():
                         print("Thank You for playing!")
                         print("score:", score)
                     elif user_input == 1:
-                        print("Question 3: Who is the starting quarterback \nof the packers as of 2019? \n1) Derk Carr \n2) Tom Brady \n3) Aaron Rodgers \n4) Cam Newton \n")
+                        print("Question 3: Who is the starting quarterback \nof the packers as of 2019? \nAnswers: \n1) Derk Carr \n2) Tom Brady \n3) Aaron Rodgers \n4) Cam Newton \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 3:
@@ -99,30 +99,19 @@ def main():
                             print("score:", score)
             # basketball is selected
             elif user_input == 2:
-                print("You Chose Basketball Trivia!")
-                print("Lets Begin!")
-                print("")
+                print("You Chose Basketball Trivia, Lets Begin! \n")
                 # basketball question 1
-                print("Question 1: What team did LeBron James get drafted to?")
-                print("Answers:")
-                print("1 ) Clevland Cavaleirs")
-                print("2 ) Toronto Raptors")
-                print("3 ) Miami Heat")
-                print("4 ) Chicago Bulls")
+                print("Question 1: What team did LeBron James \nget drafted to? \nAnswers: \n1 ) Clevland Cavaleirs \n2 ) Toronto Raptors \n3 ) Miami Heat \n4 ) Chicago Bulls \n")
                 user_input = int(input("Enter Answer Here:"))
                 print("")
                 if user_input == 1:
-                    print("Correct, LeBron James was drafted to the"
-                          " Clevland Calvaliers in 2003.")
+                    print("Correct, LeBron James was drafted to the \nClevland Calvaliers in 2003. \n")
                     score = score + 1
-                    print("")
-                    print("score:", score)
+                    print("Score:", score)
                     print("")
                 else:
-                    print("incorrect, LeBron James was drafted to the"
-                          " Clevland Cavaliers in 2003.")
-                    print("")
-                    print("score:", score)
+                    print("Incorrect, LeBron James was drafted to the \nClevland Cavaliers in 2003.\n")
+                    print("Score:", score)
                     print("")
                 # next question 3
                 user_input = askingUsertoContinue()
@@ -132,22 +121,16 @@ def main():
                     print("Thank You for playing!")
                 # basketball question 2
                 elif user_input == 1:
-                    print("Question 2: Who holds the record for most NBA championships as of 2019?")
-                    print("1) LA Lakers")
-                    print("2) Chicago Bulls")
-                    print("3) Boston Celtics")
-                    print("4) Golden State Worriors")
+                    print("Question 2: Who holds the record for most \nNBA championships as of 2019?\nAnswers: \n1) LA Lakers \n2) Chicago Bulls \n3) Boston Celtics \n4) Golden State Worriors \n")
                     user_input = int(input("Enter Answer Here: "))
                     print("")
                     if user_input == 3:
-                        print("Correct, the Boston Celtics hold the MostNBA championships with a total of 17")
-                        print("")
+                        print("Correct, the Boston Celtics hold the most \nNBA championships with a total of 17. \n")
                         score = score + 1
                         print("score:", score)
                         print("")
                     else:
-                        print("Incorrect, the Boston Celtics hold the Most NBA championships with a total of 17")
-                        print("")
+                        print("Incorrect, the Boston Celtics hold the most \nNBA championships with a total of 17. \n")
                         print("score:", score)
                         print("")
                     # next question 4
@@ -157,29 +140,22 @@ def main():
                         print("Thank You for playing!")
                     # basketball question 3
                     elif user_input == 1:
-                        print("Question 3: How many NBA teams are"
-                              " there as of 2019")
-                        print("1) 32")
-                        print("2) 30")
-                        print("3) 18")
-                        print("4) 46")
+                        print("Question 3: How many NBA teams are there as of 2019 \nAnswers: \n1) 32 \n2) 30 \n3) 18 \n4) 46 \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 2:
-                            print("Correct, There are currently 30 NBA teams as of 2019")
-                            print("")
+                            print("Correct, There are currently 30 NBA teams as of 2019.\n")
                             score = score + 1
                             print("score:", score)
                             print("")
                         else:
-                            print("Incorrect, There are currently 30 NBA teams as of 2019")
-                            print("")
+                            print("Incorrect, There are currently 30 NBA teams as of 2019.\n")
                             print("score:", score)
                             print("")
-                        print(
-                            "Thank You for playing the basketball portion of Sports Trivia! Would you like to return to the main menu?")
-                        print("1) Return to Main Menu")
-                        print("2) End Game")
+                        print("Thank You for playing! \nYou have completed the basketball portion of \nSports Trivia '19!\n")
+                        print("score:", score)
+                        print("")
+                        print("1) Return to Main Menu \n2) End Game \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         # Exit for basketball question 3
@@ -502,7 +478,7 @@ def askingUsertoContinue():
     print("Would you like another question?")
     print("1 ) Yes")
     print("2 ) Return to Main Menu")
-    print("3 ) Exit game")
+    print("3 ) Exit game \n")
     user_input = int(input("Enter answer here:"))
     print("")
     return user_input
