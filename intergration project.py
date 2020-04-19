@@ -22,11 +22,13 @@ def main():
             print("*" + "", end="")
         print("")
         main_menu = int(input("Enter the number of menu option desired: "))
+        barrierDesign()
         # play options menu
         if main_menu == 1:
             print("\nSports Option Menu \n1) Football \n2) Basketball \n3) Baseball \n4) Hockey \n5) Soccer \n")
             user_input = int(input("Enter the number of sport option desired: "))
             print("")
+            barrierDesign()
             # football is selected
             if user_input == 1:
                 print("You Chose Football Trivia, Let's Begin! \n")
@@ -36,19 +38,21 @@ def main():
                 user_input = int(input("Enter Answer Here: "))
                 print("")
                 if user_input == 2:
-                    print("Correct! The New England Patriots won \nSuper Bowl 51 in 2017 against the \nAtlanta Falcons. \n")
+                    print("Correct! The New England Patriots won \nSuper Bowl 51 in 2017 against the Atlanta Falcons. \n")
                     score = score + 1
                     print("score:", score)
                 else:
-                    print("Incorrect, The New England Patriots won  \nSuper Bowl 51 in 2017 against the \nAtlanta Falcons. \n")
+                    print("Incorrect, The New England Patriots won  \nSuper Bowl 51 in 2017 against the Atlanta Falcons. \n")
                     print("score:", score)
                 print("")
                 # next question 1
+                barrierDesign()
                 user_input = askingUsertoContinue()
+                barrierDesign()
                 # football question 2
                 if user_input == 3:
                     user_wishes_to_continue = False
-                    print("Thank you for playing")
+                    print("Thank you for playing Sprts Trivia '19")
                 elif user_input == 1:
                     print("Question 2: who owns the current title of most \nrunning yards in their career as of 2019? \nAnswers: \n1) Frank Gore \n2) Adrian Peterson \n3) Emmitt Smith \n4) Josh Jacobs \n")
                     user_input = int(input("Enter Ansewer Here: "))
@@ -65,14 +69,16 @@ def main():
                         print("score:", score)
                         print("")
                     # next question 2
+                    barrierDesign()
                     user_input = askingUsertoContinue()
+                    barrierDesign()
                     # football question 3
                     if user_input == 3:
                         user_wishes_to_continue = False
-                        print("Thank You for playing!")
+                        print("Thank You for playing Sports Trivia '19!")
                         print("score:", score)
                     elif user_input == 1:
-                        print("Question 3: Who is the starting quarterback \nof the packers as of 2019? \nAnswers: \n1) Derk Carr \n2) Tom Brady \n3) Aaron Rodgers \n4) Cam Newton \n")
+                        print("Question 3: Who is the starting quarterback of the packers as of 2019? \nAnswers: \n1) Derk Carr \n2) Tom Brady \n3) Aaron Rodgers \n4) Cam Newton \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 3:
@@ -86,42 +92,47 @@ def main():
                           print("")
                           print("score:", score)
                           print("")
-                        print("Thank You for playing! \nYou have completed the football portion of \nSports Trivia '19!\n")
+                        barrierDesign()
+                        print("Thank You for playing! \nYou have completed the football portion of Sports Trivia '19!\n")
                         print("score:", score)
                         print("")
+                        barrierDesign()
                         print("1) Return to Main Menu \n2) End Game \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 2:
                             user_wishes_to_continue = False
                             print("")
-                            print("Thank You for playing sports trivia! \n")
+                            print("Thank You for playing sports trivia 19'! \n")
                             print("score:", score)
+                        barrierDesign()
             # basketball is selected
             elif user_input == 2:
                 print("You Chose Basketball Trivia, Lets Begin! \n")
                 # basketball question 1
-                print("Question 1: What team did LeBron James \nget drafted to? \nAnswers: \n1 ) Clevland Cavaleirs \n2 ) Toronto Raptors \n3 ) Miami Heat \n4 ) Chicago Bulls \n")
+                print("Question 1: What team did LeBron James get drafted to?\n \nAnswers: \n1 ) Clevland Cavaleirs \n2 ) Toronto Raptors \n3 ) Miami Heat \n4 ) Chicago Bulls \n")
                 user_input = int(input("Enter Answer Here:"))
                 print("")
                 if user_input == 1:
-                    print("Correct, LeBron James was drafted to the \nClevland Calvaliers in 2003. \n")
+                    print("Correct, LeBron James was drafted to the Clevland Calvaliers in 2003. \n")
                     score = score + 1
                     print("Score:", score)
                     print("")
                 else:
-                    print("Incorrect, LeBron James was drafted to the \nClevland Cavaliers in 2003.\n")
+                    print("Incorrect, LeBron James was drafted to the Clevland Cavaliers in 2003.\n")
                     print("Score:", score)
                     print("")
                 # next question 3
+                barrierDesign()
                 user_input = askingUsertoContinue()
+                barrierDesign()
                 # exit for basketball question 1
                 if user_input == 3:
                     user_wishes_to_continue = False
-                    print("Thank You for playing!")
+                    print("Thank You for playing Sports Trivia '19!")
                 # basketball question 2
                 elif user_input == 1:
-                    print("Question 2: Who holds the record for most \nNBA championships as of 2019?\nAnswers: \n1) LA Lakers \n2) Chicago Bulls \n3) Boston Celtics \n4) Golden State Worriors \n")
+                    print("Question 2: Who holds the record for most \nNBA championships as of 2019?\n \nAnswers: \n1) LA Lakers \n2) Chicago Bulls \n3) Boston Celtics \n4) Golden State Worriors \n")
                     user_input = int(input("Enter Answer Here: "))
                     print("")
                     if user_input == 3:
@@ -134,13 +145,15 @@ def main():
                         print("score:", score)
                         print("")
                     # next question 4
+                    barrierDesign()
                     user_input = askingUsertoContinue()
+                    barrierDesign()
                     if user_input == 3:
                         user_wishes_to_continue = False
-                        print("Thank You for playing!")
+                        print("Thank You for playing Sports Trivia '19!")
                     # basketball question 3
                     elif user_input == 1:
-                        print("Question 3: How many NBA teams are there as of 2019 \nAnswers: \n1) 32 \n2) 30 \n3) 18 \n4) 46 \n")
+                        print("Question 3: How many NBA teams are there as of 2019?\n \nAnswers: \n1) 32 \n2) 30 \n3) 18 \n4) 46 \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         if user_input == 2:
@@ -152,21 +165,24 @@ def main():
                             print("Incorrect, There are currently 30 NBA teams as of 2019.\n")
                             print("score:", score)
                             print("")
-                        print("Thank You for playing! \nYou have completed the basketball portion of \nSports Trivia '19!\n")
+                        barrierDesign()
+                        print("Thank You for playing! \nYou have completed the basketball portion of Sports Trivia '19!\n")
                         print("score:", score)
                         print("")
+                        barrierDesign()
                         print("1) Return to Main Menu \n2) End Game \n")
                         user_input = int(input("Enter Answer Here:"))
                         print("")
                         # Exit for basketball question 3
                         if user_input == 2:
                             user_wishes_to_continue = False
-                            print("Thank You for playing sports trivia!")
+                            print("Thank You for playing sports trivia '19!")
+                        barrierDesign()
             # baseball is selected
             elif user_input == 3:
               print("You chose baseball trivia, Let's Begin! \n")
               #baseball question 1
-              print("Question 1: What MLB team does Chris Sale pitch for as of 2019? \nAnswers: \n1 ) Boston Red Sox \n2 ) Chicago White sox \n3 ) Tampa Bay Rays \n4 ) CHicago Cubs")
+              print("Question 1: What MLB team does Chris Sale pitch for as of 2019?\n \nAnswers: \n1 ) Boston Red Sox \n2 ) Chicago White sox \n3 ) Tampa Bay Rays \n4 ) CHicago Cubs \n")
               user_input = int(input("Enter Answer Here: "))
               print("")
               if user_input == 1:
@@ -179,13 +195,15 @@ def main():
                 print("Score:", score)
                 print("")
               # next question 5
+              barrierDesign()
               user_input = askingUsertoContinue()
+              barrierDesign()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing sports trivia!")
+                print("Thank you for playing sports trivia '19!")
               # baseball question 2
               elif user_input == 1:
-                print("Question 2: What MLB team has the most World Series wins?\nAnswers: \n1) Boston Red Sox \n2) St. Louis Cardinals \n3) New York Yankees \n4) LA Dodgers \n")
+                print("Question 2: What MLB team has the most World Series wins? \n \nAnswers: \n1) Boston Red Sox \n2) St. Louis Cardinals \n3) New York Yankees \n4) LA Dodgers \n")
                 user_input = int(input("Enter Ansewer Here: "))
                 print("")
                 if user_input == 3:
@@ -198,15 +216,17 @@ def main():
                   print("Score:", score)
                   print("")
                 # next question 6
+                barrierDesign()
                 user_input = askingUsertoContinue()
+                barrierDesign()
                 if user_input == 3:
                   user_wishes_to_continue = False
-                  print("Thank you for playing Sports Triva!")
+                  print("Thank you for playing Sports Triva '19!")
                   print("")
                   print("score:", score)
               # baseball question 3
                 elif user_input == 1:
-                  print("Question 3: What famous baseball player was \nthe first to retire a number?\nAnswers: \n1) Babe Ruth \n2) Lou Gehrig \n3) Jackie Robinson \n4) Tom Seaver \n")
+                  print("Question 3: What famous baseball player was \nthe first to retire a number? \n \nAnswers: \n1) Babe Ruth \n2) Lou Gehrig \n3) Jackie Robinson \n4) Tom Seaver \n")
                   user_input = int(input("Enter Ansewer Here: "))
                   print("")
                   if user_input == 2:
@@ -218,22 +238,25 @@ def main():
                     print("Incorrect, Lou Gehrig was the first MLB player to retire\n a number in 1939. His number was 4 and retired as a Yankee.\n")
                     print("score:", score)
                     print("")
-                  print("Thank You for playing! \nYou have completed the basetball portion of \nSports Trivia '19!\n")
+                  barrierDesign()
+                  print("Thank You for playing! \nYou have completed the basetball portion of Sports Trivia '19!\n")
+                  barrierDesign()
                   print("1) Return to Main Menu")
                   print("2) End Game")
                   user_input = int(input("Enter Answer Here:"))
                   print("")
                   if user_input == 2:
                     user_wishes_to_continue = False
-                    print("Thank You for playing!")
+                    print("Thank You for playing Sports Trivia '19!")
                     print("")
                     print("score:", score)
                     print("")
+                  barrierDesign()
             # hockey is selected
             elif user_input == 4:
               print("You Chose hockey Trivia, Let's begin!\n")
               # hockey question 1
-              print("Question 1: What is the newest team to the NHL as of the 2019 season?\nAnswers: \n1 ) Columbus Blue Jackets \n2 ) Florida Panthers \n3 ) Minnesota Wilds \n4 ) Vagas Golden Knights \n")
+              print("Question 1: What is the newest team to the NHL as of the 2019 season? \n \nAnswers: \n1 ) Columbus Blue Jackets \n2 ) Florida Panthers \n3 ) Minnesota Wilds \n4 ) Vagas Golden Knights \n")
               user_input = int(input("Enter Answer Here:"))
               print("")
               if user_input == 4:
@@ -245,16 +268,18 @@ def main():
                 print("Incorrect,the Vagas Golden Knights are \nthe newest team to the NHL as of the 2019 season.\n")
                 print("Score:", score)
               # next question 7
+              barrierDesign()
               user_input = askingUsertoContinue()
+              barrierDesign()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing Sports Trivia!")
+                print("Thank you for playing Sports Trivia '19!")
                 print("")
                 print("Score:", score)
                 print("")
               # hockey question 2
               elif user_input == 1:
-                print("Question 2: What NHl team has the most Stanley Cup wins?\nAnswers: \n1) LA Kings \n2) Tampa Bay Lightning \n3) Montreal Canadiens \n4) Ottawa Senators \n")
+                print("Question 2: What NHl team has the most Stanley Cup wins?\n \nAnswers: \n1) LA Kings \n2) Tampa Bay Lightning \n3) Montreal Canadiens \n4) Ottawa Senators \n")
                 user_input = int(input("Enter Ansewer Here: "))
                 print("")
                 if user_input == 3:
@@ -266,7 +291,9 @@ def main():
                   print( "Incorrect,the Montreal Canadiens have won the most Stanly Cups,\nholding a totla of 24.\n")
                   print("Score:", score)
                 #next question 8
+                barrierDesign()
                 user_input = askingUsertoContinue()
+                barrierDesign()
                 if user_input == 3:
                   user_wishes_to_continue = False
                   print("Thank you for playing Sports Trivia!")
@@ -275,7 +302,7 @@ def main():
                   print("")
               # hockey question 3
                 elif user_input == 1:
-                  print("Question 2: How many games are played in regular season hockey?\n Answers: \n1) 32 \n2) 94 \n3) 82 \n4) 86 \n")
+                  print("Question 3: How many games are played in regular season hockey?\n \nAnswers: \n1) 32 \n2) 94 \n3) 82 \n4) 86 \n")
                   user_input = int(input("Enter Ansewer Here: "))
                   print("")
                   if user_input == 3:
@@ -287,7 +314,9 @@ def main():
                     print( "Incorrect,there are only 82 regular season games in hockey.\n")
                     print("Score:", score)
                     print("")
-                  print("Thank You for playing! \nYou have completed the hockey portion of \nSports Trivia '19!\n")
+                  barrierDesign()
+                  print("Thank You for playing! \nYou have completed the hockey portion of Sports Trivia '19!\n")
+                  barrierDesign()
                   print("1) Return to Main Menu")
                   print("2) End Game")
                   user_input = int(input("Enter Answer Here:"))
@@ -296,15 +325,16 @@ def main():
                   print("")
                   if user_input == 2:
                     user_wishes_to_continue = False
-                    print("Thank You for playing Sports Trivia!")
+                    print("Thank You for playing Sports Trivia '19!")
                     print("")
                     print("score:", score)
                     print("")
+                  barrierDesign()
             # soccer is selected
             elif user_input == 5:
               print("You Chose soccer Trivia, Let's Begin!\n")
               # soccer question 1
-              print("Question 1: How many professional soccer luages are there \nin the world as of 2019?\nAnswers: \n1 ) 18 \n2 ) 21 \n3 ) 23 \n4 ) 4 \n")
+              print("Question 1: How many professional soccer luages are there \nin the world as of 2019?\n \nAnswers: \n1 ) 18 \n2 ) 21 \n3 ) 23 \n4 ) 4 \n")
               user_input = int(input("Enter Answer Here:"))
               print("")
               if user_input == 2:
@@ -317,35 +347,40 @@ def main():
                 print("Score:", score)
                 print("")
               # next question 9
+              barrierDesign()
               user_input = askingUsertoContinue()
+              barrierDesign()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing Sports Trivia!")
+                print("Thank you for playing Sports Trivia '19!")
                 print("")
                 print("score:", score)
               # soccer question 2
               elif user_input == 1:
-                print("Question 2: How many total players on the fild during a game?\nAnswers: \n1) 11 \n2) 22 \n3) 16 \n4) 9 \n")
+                print("Question 2: How many total players on the fild during a game?\n \nAnswers: \n1) 11 \n2) 22 \n3) 16 \n4) 9 \n")
                 user_input = int(input("Enter Ansewer Here: "))
+                print("")
                 if user_input == 2:
-                  print("Correct, there are a total 22 players on the fild \nat once during a game. 11 players per team\n")
+                  print("Correct, there are a total 22 players on the fild \nat once during a game, 11 players per team\n")
                   score = score + 1
                   print("score:", score)
                   print("")
                 else:
-                  print( "Incorrect,there are a total 22 players on the fild \nat once during a game. 11 players per team\n")
+                  print( "Incorrect,there are a total 22 players on the fild \nat once during a game, 11 players per team\n")
                   print("score:", score)
                   print("")
               # next question 10
+              barrierDesign()
               user_input = askingUsertoContinue()
+              barrierDesign()
               if user_input == 3:
                 user_wishes_to_continue = False
-                print("Thank you for playing sports Trivia!")
+                print("Thank you for playing sports Trivia '19!")
                 print("")
                 print("score:", score)
               # soccer question 3
               elif user_input == 1:
-                print("Question 3: How many teams are in the Primer Luage as of 2019?\nAnswers: \n1) 20 \n2) 22 \n3) 16 \n4) 31 \n")
+                print("Question 3: How many teams are in the Primer Luage as of 2019?\n \nAnswers: \n1) 20 \n2) 22 \n3) 16 \n4) 31 \n")
                 user_input = int(input("Enter Ansewer Here: "))
                 print("")
                 if user_input == 1:
@@ -357,7 +392,9 @@ def main():
                   print( "Incorrect,there are only 20 teams in the primer Luage as of 2019 \n")
                   print("score:", score)
                 print("")
-                print("Thank You for playing! \nYou have completed the soccer portion of \nSports Trivia '19!\n")
+                barrierDesign()
+                print("Thank You for playing! \nYou have completed the soccer portion of Sports Trivia '19!\n")
+                barrierDesign()
                 print("1) Return to Main Menu")
                 print("2) End Game \n")
                 user_input = int(input("Enter Answer Here:"))
@@ -366,38 +403,40 @@ def main():
                 print("")
                 if user_input == 2:
                   user_wishes_to_continue = False
-                  print("Thank You for playing Sports Trivia!")
+                  print("Thank You for playing Sports Trivia '19!")
                   print("")
                   print("score:", score)
+                barrierDesign()
         # info from main menu
         elif main_menu == 2:
-            print("Game Info")
+            print("\nGame Info:\n")
             print(
-                "Thank you for playing Sports Trivia! This trivia game is"
-                " a basic knowledge quiz about various sports.\nIn the "
-                "Sports"
-                " options menu you can select one of 5 different sports to be"
-                " quized on.\nEach sport has 3 questions and you will be"
-                " awarded 1 point for every question correctly answered."
-                " \nWhen you end the game you will recive a * for how many "
-                "points you have earned. Challenge your friends to see who"
-                " knows the most across all 5 sports!")
-            print(" ")
-            print("Please select an option below")
-            print("1) return to Main Menu")
-            print("2) Exit game")
+                "Thank you for playing Sports Trivia '19! This trivia game is \na basic knowledge quiz about various sports.\n \nSports Option Menu:\n \nIn the Sports options menu you can select one of five \ndifferent sports to be quized on.Each sport has \nthree questions and you will be awarded one point for every \nquestion correctly answered.\n \nStars and Career Status:\n \nAt the main menu, you will be able to see a stars counter and \ncareer status dipslay. The stars counter displays a * for \nevery question answered correctly. The career status dipslay \nshows you the current position in your career depending \non how many questions you have gotten correct. There are seven \npossible career status titels, starting at D1 draft pick to \nHall of Famer.\n \nChallenge your friends to see who can get all fifteen questions \ncorrect and flex your sports knowledge.\n")
+            barrierDesign()
+            print("Please select an option below \n")
+            print("1) Return to Main Menu")
+            print("2) Exit game \n")
             user_input = int(input("Enter menu option desired here:"))
             if user_input == 2:
                 user_wishes_to_continue = False
-                print("Thank You for playing Sports trivia!")
+                print("Thank You for playing Sports trivia '19!")
                 print("")
                 print("score:", score)
+            barrierDesign()    
         # exit from Main Menu
         elif main_menu == 3:
             user_wishes_to_continue = False
-            print("Thank You for playing Sports Trivia!")
+            print("Thank You for playing Sports Trivia '19!")
             print("")
             print("score:", score)
+            print("")
+            print("Career Status: ")
+            playerCareerStatus(score)
+            print("\nStars:")
+            for stars in range(score):
+              print("*" + "", end="")
+            print("")
+
 
 def playerCareerStatus(score):
   if (score == 0):
@@ -430,8 +469,16 @@ def askingUsertoContinue():
     print("")
     return user_input
 
-"""
+    """
     returns the user input to either deplay next question, return to main menu, or end game
-"""
+    """
+
+def barrierDesign():
+  for stars in range(79):
+    print("^" + "", end="")
+  print("")
+  """
+  creates the ^ deigned barrier between questions and menus
+  """
 
 main()
